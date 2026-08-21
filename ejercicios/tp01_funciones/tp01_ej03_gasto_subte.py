@@ -14,7 +14,8 @@ def calcular_costo(cant_viajes):
         costo = 1680 * 0.7
     else: 
         costo = 1680 * 0.6
-    costo_total = costo * cant_viajes
-    print(f"El gasto total en subte es: {costo_total: .2f}")
+    return  costo * cant_viajes
 
-calcular_costo(cant_viajes)
+costo_total = calcular_costo(cant_viajes)   
+print(f"El gasto total en subte es: {costo_total: .2f}")
+

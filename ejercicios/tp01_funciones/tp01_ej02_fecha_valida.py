@@ -3,13 +3,22 @@ dia = int(input("ingrese un dia: "))
 mes = int(input("ingrese un mes: "))
 año = int(input("ingrese un año: "))
 
+def año_bisiesto(año):
+    """Determinar si el año ingresado es bisiesto o no"""
+    if año % 4 == 0 and (año % 100 != 0 or año % 400 == 0):
+        return True
+    else:
+        return False
+
+
 def validar_fecha(dia, mes, año):
     """validar la fecha antes solicitada ydevolver true o false dependiendo si es valida o no"""
     match mes:
         case 1:
             dia_max = 31
         case 2:
-            if año % 4 == 0 and (año % 100 != 0 or año % 400 == 0):
+            año_bisiesto(año)
+            if año_bisiesto(año) == True:
                 dia_max = 29 
             else:
                 dia_max = 28

@@ -5,17 +5,17 @@ def oblongo(numero):
     resultado = round(numero ** (1/2))
     verificar = resultado * (resultado + 1)
     if verificar == numero:
-        print("Es oblongo")
+       return True
     else:
-        print("No es oblongo")
+       return False
         
 oblongo(numero)
 
 def triangular(numero):
     verificar = (numero * 8 + 1) ** (1/2)
     if verificar == round(verificar):
-        print("Es triangular")
+        return True
     else:
-        print("No es triangular")
+        return False
 
 triangular(numero)
