@@ -1,6 +1,8 @@
+""" pre condicion: ninguno de los numeros ingresados es negativo
+    post condicion: post condicion:devuelve el mayor si es unico, sino devuelve -1"""
 
 def numero_positivo():
-    """Ingresar 3 numeros y revisar que sean positivos, en caso de no serlo, vuelve a pedirlo"""
+    """El usuario ingresa 3 numeros y la funcion valida que sean positivos"""
     numero_a = int(input("Ingrese un numero: "))
     while numero_a < 0: 
         numero_a = int(input("Ingrese un numero: "))
@@ -13,7 +15,7 @@ def numero_positivo():
     return numero_a, numero_b, numero_c
 
 def mayor():
-    """Busca el mayor de los numros ingresados y devuelve el mayor si es unico, sino devuelve -1"""
+    """Busca el mayor de los numeros ingresados y devuelve -1 si no es unico"""
     numero_a, numero_b, numero_c = numero_positivo()
     if numero_a > numero_b and numero_a > numero_c:
         print(f"el numero mayor es {numero_a}")

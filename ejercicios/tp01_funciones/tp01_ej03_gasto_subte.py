@@ -1,4 +1,7 @@
-""""Solicitar al usuario la cantidad de viajes en subte que realizó durante el mes"""
+""""Solicitar al usuario la cantidad de viajes en subte que realizó durante el mes
+    pre condicion: la cantidad de viajes ingresada es un numero entero positivo
+    post condicion: devuelve el gasto total en subte según la cantidad de viajes realizados"""
+    
 cant_viajes = int(input("Ingrese la cantidad de viajes del mes: "))
 while cant_viajes < 0:
         cant_viajes = int(input("Ingrese la cantidad de viajes del mes: "))

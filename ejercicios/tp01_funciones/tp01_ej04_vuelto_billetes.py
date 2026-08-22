@@ -1,4 +1,7 @@
-"""Solicitar al usuario el total de la compra y el dinero recibido"""
+"""Solicitar al usuario el total de la compra y el dinero recibido 
+    pre condicion: el dinero recibido es mayor o igual al total de la compra
+    post condicion: devuelve el cambio a devolver al cliente y la cantidad de billetes necesarios para devolverlo"""
+    
 total_compra = int(input("Ingrese el total de la compra: "))
 dinero_recibido = int(input("Ingrese el dinero recibido: "))
 while dinero_recibido < total_compra:

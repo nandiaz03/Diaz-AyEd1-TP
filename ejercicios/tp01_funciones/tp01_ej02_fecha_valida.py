@@ -1,4 +1,7 @@
-"""Solicitar al usuario un dia, mes y año"""
+"""Solicitar al usuario un dia, mes y año  
+    pre condicion: verificar las fechas ingresadas sean validas, teniendo en cuenta los años bisiestos
+    post condicion: devuelve true si la fecha es valida, false en caso contrario"""
+
 dia = int(input("ingrese un dia: "))
 mes = int(input("ingrese un mes: "))
 año = int(input("ingrese un año: "))
