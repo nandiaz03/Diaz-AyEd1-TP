@@ -23,9 +23,9 @@ def main()-> None:
     lista = cargar_lista()
     print("Carga los valores a eliminar")
     valores_a_eliminar = cargar_lista()
-    lista_resultante = eliminar_valores
     print(f"lista original: {lista}")
     print(f"valores a eliminar: {valores_a_eliminar}")
+    eliminar_valores(lista,valores_a_eliminar)
     print(f"lista resultante {lista}")
 
 if __name__ == "__main__":
