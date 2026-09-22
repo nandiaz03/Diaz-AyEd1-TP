@@ -4,14 +4,14 @@ import random as rn
 pre condiciones: el numero ingresado es un numero entero positivo de 2 digitos 
 post condiciones: devuelve una lista con numeros aleatorios de 4 digitos, la suma de los elementos, elimina un elemento de la lista si se encuentra y verifica si la lista es capicua"""
 
-def cargar_lista(numero:int)-> lista[int]:
+def cargar_lista(numero:int)-> list[int]:
     """armar una lista con numeros aleatorios de 4 digitos"""
     lista = [] 
     for i in range(numero):
         lista.append(rn.randint(1000, 9999))
     return lista
 
-def calcular_producto(lista:lista[int])->int:
+def calcular_producto(lista:list[int])->int:
     """Calcular el producto de los elementos de la lista"""
     if len(lista) > 0:
         producto = 1
@@ -38,7 +38,7 @@ def es_capicua(lista:list[int])->bool:
     else:
         return False
 
-def main()->none:
+def main()->None:
     numero = int(input("Ingrese un numero de 2 digitos: "))
     while numero < 10 or numero > 99:
         print("Error - el numero ingresado es invalido")
