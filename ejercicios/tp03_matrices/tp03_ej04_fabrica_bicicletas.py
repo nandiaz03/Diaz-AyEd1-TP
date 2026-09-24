@@ -1,7 +1,9 @@
 import random as rn
 
 def cargar_matriz(cant_fabricas: int)->list[list[int]]:
-    """contrato: generar una matriz de tantas fabricas como ingrese el usuario con la cantidad de produccion de fabricas durante una semana"""
+    """contrato: generar una matriz de tantas fabricas como ingrese el usuario con la cantidad de produccion de fabricas durante una semana
+    precondiciones: cantidad de fabricas debe ser un numero mayor a 0
+    postcondiciones: devuelve la matriz"""
     matriz = []
     for i in range(cant_fabricas):
         fila = []
@@ -11,11 +13,17 @@ def cargar_matriz(cant_fabricas: int)->list[list[int]]:
     return matriz
 
 def opcion_a(matriz: list[list[int]])->None: 
+    """contrato: Esta funcion muestra la cantidad total de fabricaciones por fabrica
+    precondiciones: matriz no debe estar vacia
+    postcondiciones: devuelve el total acumulado de cada fabrica"""
     for i, valores in enumerate(matriz):
         sum_fila = sum(valores)
         print(f"la fabrica {i + 1} produjo un total de {sum_fila}")
     
 def opcion_b(matriz: list[list[int]])->int:
+    """contrato: esta funcion muestra la mayor produccion en un solo dia por fabrica
+    precondiciones: matriz no debe estar vacia
+    postcondiciones: devuelve la maxima produccion y el dia de cada fabrica"""
     max_produc = matriz[0][0]
     dia_produc = 0
     fabrica = 0
@@ -28,6 +36,9 @@ def opcion_b(matriz: list[list[int]])->int:
     return max_produc, dia_produc, fabrica
 
 def opcion_c(matriz: list[list[int]])->int:
+    """contrato: cual fue el dia mas productivo teniendo en cuenta todas las fabricas
+    precondiciones: matriz no debe estar vacia
+    postcondiciones: devuelve la mayor produccion y el dia teniendo en cuenta todas las fabricas."""
     total_produc = []
     suma_produc = 0
     for i in range(len(matriz)):
@@ -39,6 +50,9 @@ def opcion_c(matriz: list[list[int]])->int:
     return maximo, dia_max
 
 def opcion_d(matriz: list[list[int]])->list[int]:
+    """contrato: esta funcion devuelbe la menor cantidad fabricada de cada fabrica
+    precondiciones: matriz no debe estar vacia
+    postcondiciones: devuelve una lista con las menores producciones de cada fabrica"""
     menores = [min(i) for i in matriz]
     return menores
 
