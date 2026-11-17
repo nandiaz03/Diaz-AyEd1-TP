@@ -7,21 +7,19 @@ Este directorio contiene los ejercicios correspondientes a este trabajo práctic
 
 ## Archivos incluidos
 
-No se encontraron archivos de ejercicios.
-
-Los archivos deben nombrarse con el formato:
-
-```text
-tp01_ej01_descripcion.py
-tp01_ej02_descripcion.py
-```
+| Nº | Archivo | Ejecución |
+|---:|---|---|
+| 1 | `tp04_ej01_capicua.py` | `python tp04_ej01_capicua.py` |
+| 2 | `tp04_ej02_centrar_texto.py` | `python tp04_ej02_centrar_texto.py` |
+| 3 | `tp04_ej03_clave_maestra.py` | `python tp04_ej03_clave_maestra.py` |
+| 4 | `tp04_ej04_numeros_romanos.py` | `python tp04_ej04_numeros_romanos.py` |
 
 ## Ejecutar un ejercicio
 
 Desde este directorio:
 
 ```bash
-python tp01_ej01_nombre_del_ejercicio.py
+python tp04_ej01_capicua.py
 ```
 
 ## Ejecutar el menú
